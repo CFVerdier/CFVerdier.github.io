@@ -1,114 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Home Page</title>
+<title> Publications</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header*/
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #e68a00;
-  color: white;
-}
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
-}
-
-a {
-  text-decoration: none;/* Remove underline */
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: right; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-}
-
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-  background-color: #ddd; /* Grey background color */
-  color: black; /* Black text color */
-}
-
-
-.side a {
-  color: black;
-}
-
-.side a:hover {
-  font-weight: 900;
-}
-
-.side a:visited {
-  color: black;
-}
-
-/* Ensure proper sizing */
-* {
-  box-sizing: border-box;
-}
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 10%; /* Set the width of the sidebar */
-  background-color: white; /* Grey background color */
-  padding: 20px; /* Some padding */
-  margin-left: auto;
-}
-
-/* Main column */
-.main {
-  flex: 80%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 20px; /* Some padding */
-  margin-right: auto;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-</style>
+<link rel = "stylesheet" href = "mystyle.css">
 </head>
 <body>
 
@@ -137,15 +33,36 @@ a {
   </div>
   <div class="main">
     <h1> List of publications </h1>
+    <h2> Dissertation </h2>
+    <ul>
+      <li> C.F. Verdier <br>
+        <i> Formal Synthesis of Analytic Controllers: An Evolutionary Approach.</i> <br>
+        <a href ="https://doi.org/10.4233/uuid:70f6704f-30e4-4e1a-8c74-9fe2b699a80d">Online (2020) </a>
+    </ul>
     <h2> Journals </h2>
     <ul>
-      <li> C.F. Verdier, N. Kochdumper, M. Althoff, and M. Mazo Jr. (2020). Formal Synthesis Of Closed-form Sampled-data Controllers for Nonlinear Continuous-time Systems Under STL Specifications.
-        <a href = "https://arxiv.org/abs/2006.04260">arXiv preprint arXiv:2006.04260<a>
-      <li> C.F. Verdier and M. Mazo, Jr. (2020). Formal Controller Synthesis for Hybrid Systems Using Genetic Programming.
-        <a href ="https://arxiv.org/abs/2003.14322">arXiv preprint arXiv:2003.14322<a>
+      <li> C.F. Verdier, N. Kochdumper, M. Althoff, and M. Mazo Jr.<br>
+        <i> Formal Synthesis of Closed-form Sampled-data Controllers for Nonlinear Continuous-time Systems Under STL Specifications. </i> <br>
+        <a href = "https://arxiv.org/abs/2006.04260">arXiv preprint arXiv:2006.04260 </a> (2020)
+      <li> C.F. Verdier and M. Mazo, Jr. <br>
+        <i> Formal Controller Synthesis for Hybrid Systems Using Genetic Programming. </i> <br>
+        <a href ="https://arxiv.org/abs/2003.14322">arXiv preprint arXiv:2003.14322 </a> (2020)
     </ul>
     <h2> Conference papers</h2>
-    <p> </p>
+    <ul>
+      <li> C.F. Verdier, R. Babuska, B. Shyrokau and M. Mazo Jr. <br>
+         Near Optimal Control with Reachability and Safety Guarantees.<br>
+        <a href = "https://doi.org/10.1016/j.ifacol.2019.09.146">5th IFAC Conference on Intelligent Control and Automation Sciences (ICONS).</a> (2019)
+      <li> C.F. Verdier and M. Mazo. <br>
+        <i> Formal Controller Synthesis of Analytic Controllers for Sampled-data Systems via Genetic Programming. </i><br>
+        <a href = "https://doi.org/10.1109/CDC.2018.8619121">57th IEEE Conference on Decision and Control (CDC) </a> (2018)
+      <li> I.S. Zapreev, C. Verdier, and M. Mazo Jr. <br>
+         <i> Optimal Symbolic Controllers Determinization for BDD Storage. </i> <br>
+        <a href = "https://doi.org/10.1016/j.ifacol.2018.08.001">6th IFAC Conference on Analysis and Design of Hybrid Systems (ADHS) </a> (2018)
+      <li> C.F. Verdier and M. Mazo <br>
+        <i> Formal Controller Synthesis via Genetic Programming. </i> <br>
+        <a href = "https://doi.org/10.1016/j.ifacol.2017.08.1362">IFAC-PapersOnLine. </a> (2017)
+    </ul>
 
   </div>
 </div>
