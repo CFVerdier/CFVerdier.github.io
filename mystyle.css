@@ -1,3 +1,7 @@
+html{
+  overflow-y: scroll;
+}
+
 
 body {
   font-family:  Arial, sans-serif;
@@ -61,16 +65,18 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
+  justify-content: center
 }
 
 .leftcolumn{
   float: left;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .rightcolumn{
   float: left;
   word-wrap: break-word;
+  max-width: 500px;
 }
 
 
