@@ -23,6 +23,7 @@ body {
 .navbar {
   overflow: hidden; /* Hide overflow */
   background-color: #333; /* Dark background color */
+  text-align: center;
 }
 
 a {
@@ -40,8 +41,7 @@ a:visited {
 
 /* Style the navigation bar links */
 .navbar a {
-  float: right; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
+  display: inline-block; /* Change the display to block, for responsive reasons (see below) */
   color: white; /* White text color */
   text-align: center; /* Center the text */
   padding: 14px 20px; /* Add some padding */
@@ -76,7 +76,7 @@ a:visited {
 .rightcolumn{
   float: left;
   word-wrap: break-word;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 
@@ -94,6 +94,18 @@ a:visited {
     width: 100%;
   }
 }
+
+figure {
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  font-style: italic;
+  padding: 2px;
+  font-size: 7pt;
+}
+
 
 .center {
   display: block;
