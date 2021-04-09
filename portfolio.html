@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Publications</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "mystyle.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Dr. Ir. Cees Ferdinand Verdier</h1>
+</div>
+
+<!--Navigation bar-->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="cv">Curriculum vitae</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="publications.html">Publications</a>
+  <a href="software.html">Software</a>
+</div>
+
+<!--side content and main content -->
+<div class="wrapper">
+  <div class="leftcolumn">
+    <img src = "Images/Foto_no_bg.png" alt="Cees F. Verdier" style = "width:180px;" class =  "center">
+    <h1> Contact </h1>
+    <a href="https://scholar.google.nl/citations?user=lTwS7rgAAAAJ&hl=en">Google Scholar</a><br>
+    <a href="https://www.linkedin.com/in/cees-verdier-530a6b102">LinkedIn</a><br>
+    <a href="https://www.researchgate.net/profile/Cees-Verdier">ResearchGate</a><br>
+    <!-- ceesverdier [at] outlook [dot] com -->
+  </div>
+  <div class="rightcolumn">
+    <h1>Formal controller synthesis using evolutionary methods </h1>
+    <figure>
+      <img src = "Images/pathplanning.png" alt="path planning" style = "width:170px;">
+      <img src = "Images/aircraft.png" alt="aircraft" style = "width:320px;">
+      <figcaption> source: C.F. Verdier, N. Kochdumper, M. Althoff, and M. Mazo Jr.,
+        Formal Synthesis of Closed-form Sampled-data Controllers for Nonlinear Continuous-time Systems Under STL Specifications. (2020). </figcaption>
+    </figure>
+      <h2> Context </h2>
+        <p>
+          PhD position at Delft University of Technology, 2015-2020.
+        </p>
+      <h2> Motivation </h2>
+        <p>
+          Control design for modern safety-critical cyber-physical systems still
+          requires significant expert-knowledge, since for general hybrid
+          systems with temporal logic specifications there are no constructive
+          methods. Nevertheless, in recent years multiple approaches have been
+          proposed to automatically synthesize correct-by-construction
+          controllers. However, typically these methods either result in
+          enormous look-up tables, require online optimization, or are highly
+          dependent on expert-knowledge.
+        </p>
+      <h2> Goal </h2>
+        <p>
+          The goal of this project was to propose a novel approach that
+          overcomes these limitations, i.e. to propose a framework for automatic
+          controller synthesis, capable of synthesizing interpretable
+          closed-form controllers for hybrid systems with temporal logic
+          specifications, without a heavy reliance on expert-knowledge.
+        </p>
+      <h2> Approach </h2>
+        <p>
+          We utilized methods showing great similarities to the human design
+          process, namely evolutionary algorithms and counterexample-guided
+          inductive synthesis. Specifically, we used genetic programming (GP),
+          an evolutionary algorithm capable of evolving entire programs. This
+          made it possible to automatically discover the structure of a
+          solution. Moreover, it enabled the synthesis of compact and
+          interpretable closed-form controllers, circumventing the need for
+          look-up tables or online optimization. In combination with GP, we used
+          the concept of counterexample-guided inductive synthesis (CEGIS) to
+          refine candidate solutions based on counterexamples, until the
+          controller is guaranteed to satisfy the desired specification. We have
+          explored two CEGIS-based synthesis frameworks, which differ in the
+          employed verification paradigms, namely utilizing either
+          (co-synthesized) Lyapunov-like functions or reachability analysis.
+          Both frameworks result in correct-by-construction compact closed-form
+          controllers, where the use of expert-knowledge is optional. Both
+          frameworks are capable of synthesizing sampled-data controllers,
+          enabling implementation in embedded hardware with limited memory and
+          computation power, forming a stepping stone towards faster automation.
+          </p>
+      <h2> Responsibilities </h2>
+        <p>
+          The overall project was carried out in a collaboration between Delft
+          University of Technology, Eindhoven University of Technology, and
+          various industrial partners. My responsibilities as a PhD candidate
+          included:
+          <ul>
+            <li> Combining several techniques, including genetic programming,
+            reinforcement learning, certificate functions, SMT solvers and
+            reachability analysis, to automatically synthesize
+            correct-by-construction controllers.
+            <li> The implementation of developed algorithms in Mathematica, Matlab and Python.
+            <li> The publication of several conference and journal papers.
+          </ul>
+        </p>
+      <h1>Geometric control of an under-actuated balancing robot </h1>
+      <figure>
+        <img src = "Images/BB1.png" alt="ballbot1" style = "width:250px;">
+        <img src = "Images/BB2.png" alt="ballbot2" style = "width:200px;">
+        <img src = "Images/BB3.png" alt="ballbot3" style = "width:450px;">
+        <figcaption> source: C.F. Verdier. Geometric Control of an Under-actuated Balancing Robot. (2015).
+        </figcaption>
+      </figure>
+        <h2> Context </h2>
+          <p>
+            Master thesis, in collaboration with Alten Mechatronics, 2014-2015.
+          </p>
+        <h2> Motivation </h2>
+          <p>
+            Ball-balancing robots, or Ballbots, are mobile robots that balance
+            on top of a single ball. The robot in this project had as its
+            primary goal to be an eye-catcher at technical events. As such, the
+            primary goal of this project was to go beyond balancing and use the
+            full range of motion of the robot. While a linear approach is
+            sufficient for balancing, the full range of motion requires a highly
+            nonlinear model, dominated by three-dimensional rotations. However,
+            parameterizations of these rotations, e.g. Euler angles, can result
+            in issues such as a `gimbal lock' or singularities.
+          </p>
+        <h2> Goal </h2>
+          <p>
+            The goal of this project was to develop a geometric control
+            strategy, i.e. free of parameterization of the rotations, enabling
+            the full range of motion of the Ballbot.
+          </p>
+        <h2> Approach </h2>
+          <p>
+            Instead of parameterizing rotations, we directly considered the
+            rotations on their underlying differential manifolds. We derived a
+            new coordinate-free model using screw theory. Based on this model,
+            we designed two geometric controllers and a geometric observer,
+            which utilized rotational errors that were directly defined on their
+            underlying manifolds. Specifically, we designed a computed torque
+            controller and a sliding mode controller, that can track the
+            attitude of the robot on either the special orthogonal group $SO(3)$
+            or the 2-sphere $S^2$. Positional control of the robot was achieved
+            through the use of the relation between the desired linear
+            acceleration and the attitude of the robot. Finally, initial steps
+            were made to implement the controller in the real platform.
+          </p>
+        <h2> Responsibilities </h2>
+          <p>
+            This project was part of an in-house project of Alten Mechatronics
+            to develop a demonstrator at technical events. My tasks as a MSc
+            student included:
+            <ul>
+              <li>The derivation of a model, based on screw theory.
+              <li>The design of a geometric computed torque controller, sliding mode controller, and observer.
+              <li>Modeling, design and simulation in Matlab.
+              <li>Implementation and debugging in C++.
+            </ul>
+          </p>
+  </div>
+
+</div>
+
+</body>
+</html>
