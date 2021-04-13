@@ -114,3 +114,39 @@ figcaption {
   margin-right: auto;
   text-align:center;
 }
+
+/*Collapsible */
+.collapsible{
+  text-align: center;
+  width:100%;
+  cursor:pointer;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+}
+
+.collapsible:hover{
+  background-color: #e6e6e6;
+}
+
+.collapsiblecontent{
+  padding-top: 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in;
+}
+
+/* Symbol + and - */
+.collapsible:after {
+  margin-top:-60px;
+  font-size: 20px;
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}

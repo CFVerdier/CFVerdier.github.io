@@ -33,7 +33,9 @@
     <!-- ceesverdier [at] outlook [dot] com -->
   </div>
   <div class="rightcolumn">
-    <h1>Formal controller synthesis using evolutionary methods </h1>
+    <h1></h1>
+    <button type="button" class = "collapsible"><h1>Formal controller synthesis using evolutionary methods </h1></button>
+    <div class = "collapsiblecontent">
     <figure>
       <img src = "Images/pathplanning.png" alt="path planning" style = "width:170px;max-width: 100%;">
       <img src = "Images/aircraft.png" alt="aircraft" style = "width:320px;max-width: 100%;">
@@ -100,7 +102,10 @@
             <li> The publication of several conference and journal papers.
           </ul>
         </p>
-      <h1>Geometric control of an under-actuated balancing robot </h1>
+        </div>
+        <p> </p>
+      <button type="button" class = "collapsible"><h1>Geometric control of an under-actuated balancing robot </h1></button>
+      <div class = "collapsiblecontent">
       <figure>
         <img src = "Images/BB1.png" alt="ballbot1" style = "width:250px;max-width: 100%;">
         <img src = "Images/BB2.png" alt="ballbot2" style = "width:200px;max-width: 100%;">
@@ -157,9 +162,27 @@
               <li>Implementation and debugging in C++.
             </ul>
           </p>
+        </div>
   </div>
 
 </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 </body>
 </html>
