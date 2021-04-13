@@ -66,12 +66,12 @@ a:visited {
   margin-right: auto;
   max-width: 800px;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .leftcolumn{
   float:left;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .rightcolumn{
